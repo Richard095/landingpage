@@ -1,0 +1,87 @@
+.option {
+  display: inline-block;
+  text-decoration: none;
+  color: #ebe8e8 !important;
+  font-weight: 800;
+}
+.navbar {
+  background: #3d5afe;
+}
+.option:hover {
+  color: #ffffff !important;
+}
+.option::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+
+.option:hover::after {
+  width: 100%;
+  //transition: width .3s;
+}
+
+.sticky {
+  background: #3f51b5 !important;
+  transition: all 0.8s ease;
+}
+.nav-ontop {
+  background: #3d5afe;
+  transition: all 0.8s ease;
+}
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  border: none;
+  outline: none;
+}
+.router-link-active {
+  color: #ffffff !important;
+  //background: #3f51b5;
+}
+
+//Togler animation
+.icon-bar {
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
